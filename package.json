@@ -1,0 +1,39 @@
+{
+  "name": "mbs",
+  "version": "1.0.0",
+  "description": "youngtae's blog",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc ; NODE_ENV=dev node ./build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cicada0014/my_blog_server.git"
+  },
+  "author": "youngtae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cicada0014/my_blog_server/issues"
+  },
+  "homepage": "https://github.com/cicada0014/my_blog_server#readme",
+  "dependencies": {
+    "@types/express": "^4.11.1",
+    "@types/express-session": "^1.15.7",
+    "@types/helmet": "0.0.37",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^8.9.1",
+    "@types/raven": "^2.1.4",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "helmet": "^3.10.0",
+    "inversify": "^4.10.0",
+    "inversify-express-utils": "^5.2.1",
+    "morgan": "^1.9.0",
+    "raven": "^2.4.0",
+    "reflect-metadata": "^0.1.12",
+    "spdy": "^3.4.7",
+    "swagger-jsdoc": "^1.9.7",
+    "swagger-ui-express": "^2.0.15"
+  }
+}

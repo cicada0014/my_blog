@@ -1,0 +1,553 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/8.1.4/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node' ]
+2 info using npm@4.1.2
+3 info using node@v7.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node
+8 silly fetchNamedPackageData node
+9 silly mapToRegistry name node
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'node',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'node',
+12 silly mapToRegistry   name: 'node',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/node
+14 verbose request uri https://registry.npmjs.org/node
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 10:59:39
+17 verbose request id 67fc7de23db74339
+18 verbose etag "5a5ccab5-53bb4"
+19 verbose lastModified Mon, 15 Jan 2018 15:37:25 GMT
+20 http request GET https://registry.npmjs.org/node
+21 http 200 https://registry.npmjs.org/node
+22 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+22 verbose headers   server: 'UploadServer',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   'last-modified': 'Mon, 5 Feb 2018 3:00:41 GMT',
+22 verbose headers   etag: '"5a77c8d9-5405c"',
+22 verbose headers   'x-npm-region': 'Asia',
+22 verbose headers   'content-encoding': 'gzip',
+22 verbose headers   'content-length': '55897',
+22 verbose headers   'accept-ranges': 'bytes',
+22 verbose headers   date: 'Fri, 09 Feb 2018 01:59:38 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   age: '4439',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-itm18822-ITM',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '1',
+22 verbose headers   'x-timer': 'S1518141578.490324,VS0,VE2',
+22 verbose headers   vary: 'Accept-Encoding, Accept' }
+23 silly get cb [ 200,
+23 silly get   { 'content-type': 'application/json; charset=UTF-8',
+23 silly get     server: 'UploadServer',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     'last-modified': 'Mon, 5 Feb 2018 3:00:41 GMT',
+23 silly get     etag: '"5a77c8d9-5405c"',
+23 silly get     'x-npm-region': 'Asia',
+23 silly get     'content-encoding': 'gzip',
+23 silly get     'content-length': '55897',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Fri, 09 Feb 2018 01:59:38 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '4439',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-itm18822-ITM',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1518141578.490324,VS0,VE2',
+23 silly get     vary: 'Accept-Encoding, Accept' } ]
+24 verbose get saving node to /Users/joy/.npm/registry.npmjs.org/node/.cache.json
+25 verbose correctMkdir /Users/joy/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule node@9.5.0 checking installable status
+39 silly cache add args [ 'node', null ]
+40 verbose cache add spec node
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'node',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'node',
+41 silly cache add   name: 'node',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed node@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for node
+44 info addNameTag [ 'node', 'latest' ]
+45 silly mapToRegistry name node
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'node',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'node',
+48 silly mapToRegistry   name: 'node',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/node
+50 verbose addNameTag registry:https://registry.npmjs.org/node not in flight; fetching
+51 verbose get https://registry.npmjs.org/node not expired, no request
+52 silly addNameTag next cb for node with tag latest
+53 silly addNamed node@9.5.0
+54 verbose addNamed "9.5.0" is a plain semver version for node
+55 silly mapToRegistry name node
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry data Result {
+58 silly mapToRegistry   raw: 'node',
+58 silly mapToRegistry   scope: null,
+58 silly mapToRegistry   escapedName: 'node',
+58 silly mapToRegistry   name: 'node',
+58 silly mapToRegistry   rawSpec: '',
+58 silly mapToRegistry   spec: 'latest',
+58 silly mapToRegistry   type: 'tag' }
+59 silly mapToRegistry uri https://registry.npmjs.org/node
+60 verbose addRemoteTarball https://registry.npmjs.org/node/-/node-9.5.0.tgz not in flight; adding
+61 verbose addRemoteTarball [ 'https://registry.npmjs.org/node/-/node-9.5.0.tgz',
+61 verbose addRemoteTarball   '1c5154ee8eb600ab96306a6e9d3bade55567ca22' ]
+62 info retry fetch attempt 1 at 10:59:40
+63 info attempt registry request try #1 at 10:59:40
+64 http fetch GET https://registry.npmjs.org/node/-/node-9.5.0.tgz
+65 http fetch 200 https://registry.npmjs.org/node/-/node-9.5.0.tgz
+66 silly fetchAndShaCheck shasum 1c5154ee8eb600ab96306a6e9d3bade55567ca22
+67 verbose addTmpTarball /var/folders/zx/phtx1vpj5sn0_y2rpgxn1t740000gn/T/npm-78439-851db0f3/registry.npmjs.org/node/-/node-9.5.0.tgz not in flight; adding
+68 verbose addTmpTarball already have metadata; skipping unpack for node@9.5.0
+69 verbose correctMkdir /Users/joy/.npm correctMkdir not in flight; initializing
+70 silly cache afterAdd node@9.5.0
+71 verbose afterAdd /Users/joy/.npm/node/9.5.0/package/package.json not in flight; writing
+72 verbose correctMkdir /Users/joy/.npm correctMkdir not in flight; initializing
+73 verbose afterAdd /Users/joy/.npm/node/9.5.0/package/package.json written
+74 silly fetchNamedPackageData node-bin-setup
+75 silly mapToRegistry name node-bin-setup
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry data Result {
+78 silly mapToRegistry   raw: 'node-bin-setup',
+78 silly mapToRegistry   scope: null,
+78 silly mapToRegistry   escapedName: 'node-bin-setup',
+78 silly mapToRegistry   name: 'node-bin-setup',
+78 silly mapToRegistry   rawSpec: '',
+78 silly mapToRegistry   spec: 'latest',
+78 silly mapToRegistry   type: 'tag' }
+79 silly mapToRegistry uri https://registry.npmjs.org/node-bin-setup
+80 verbose request uri https://registry.npmjs.org/node-bin-setup
+81 verbose request no auth needed
+82 info attempt registry request try #1 at 10:59:40
+83 verbose etag "5976bbea-1511"
+84 verbose lastModified Tue, 25 Jul 2017 3:32:58 GMT
+85 http request GET https://registry.npmjs.org/node-bin-setup
+86 http 304 https://registry.npmjs.org/node-bin-setup
+87 verbose headers { date: 'Fri, 09 Feb 2018 01:59:38 GMT',
+87 verbose headers   via: '1.1 varnish',
+87 verbose headers   'cache-control': 'max-age=300',
+87 verbose headers   etag: '"5976bbea-1511"',
+87 verbose headers   age: '0',
+87 verbose headers   connection: 'keep-alive',
+87 verbose headers   'x-served-by': 'cache-itm18822-ITM',
+87 verbose headers   'x-cache': 'MISS',
+87 verbose headers   'x-cache-hits': '0',
+87 verbose headers   'x-timer': 'S1518141579.810861,VS0,VE209',
+87 verbose headers   vary: 'Accept-Encoding, Accept' }
+88 silly get cb [ 304,
+88 silly get   { date: 'Fri, 09 Feb 2018 01:59:38 GMT',
+88 silly get     via: '1.1 varnish',
+88 silly get     'cache-control': 'max-age=300',
+88 silly get     etag: '"5976bbea-1511"',
+88 silly get     age: '0',
+88 silly get     connection: 'keep-alive',
+88 silly get     'x-served-by': 'cache-itm18822-ITM',
+88 silly get     'x-cache': 'MISS',
+88 silly get     'x-cache-hits': '0',
+88 silly get     'x-timer': 'S1518141579.810861,VS0,VE209',
+88 silly get     vary: 'Accept-Encoding, Accept' } ]
+89 verbose etag https://registry.npmjs.org/node-bin-setup from cache
+90 verbose get saving node-bin-setup to /Users/joy/.npm/registry.npmjs.org/node-bin-setup/.cache.json
+91 verbose correctMkdir /Users/joy/.npm correctMkdir not in flight; initializing
+92 silly pickManifestFromRegistryMetadata spec >=1.0.0 <2.0.0 tag latest versions [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.6' ]
+93 silly resolveWithNewModule node-bin-setup@1.0.6 checking installable status
+94 silly cache add args [ 'node-bin-setup@^1.0.0', null ]
+95 verbose cache add spec node-bin-setup@^1.0.0
+96 silly cache add parsed spec Result {
+96 silly cache add   raw: 'node-bin-setup@^1.0.0',
+96 silly cache add   scope: null,
+96 silly cache add   escapedName: 'node-bin-setup',
+96 silly cache add   name: 'node-bin-setup',
+96 silly cache add   rawSpec: '^1.0.0',
+96 silly cache add   spec: '>=1.0.0 <2.0.0',
+96 silly cache add   type: 'range' }
+97 silly addNamed node-bin-setup@>=1.0.0 <2.0.0
+98 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for node-bin-setup
+99 silly addNameRange { name: 'node-bin-setup',
+99 silly addNameRange   range: '>=1.0.0 <2.0.0',
+99 silly addNameRange   hasData: false }
+100 silly mapToRegistry name node-bin-setup
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry data Result {
+103 silly mapToRegistry   raw: 'node-bin-setup',
+103 silly mapToRegistry   scope: null,
+103 silly mapToRegistry   escapedName: 'node-bin-setup',
+103 silly mapToRegistry   name: 'node-bin-setup',
+103 silly mapToRegistry   rawSpec: '',
+103 silly mapToRegistry   spec: 'latest',
+103 silly mapToRegistry   type: 'tag' }
+104 silly mapToRegistry uri https://registry.npmjs.org/node-bin-setup
+105 verbose addNameRange registry:https://registry.npmjs.org/node-bin-setup not in flight; fetching
+106 verbose get https://registry.npmjs.org/node-bin-setup not expired, no request
+107 silly addNameRange number 2 { name: 'node-bin-setup',
+107 silly addNameRange   range: '>=1.0.0 <2.0.0',
+107 silly addNameRange   hasData: true }
+108 silly addNameRange versions [ 'node-bin-setup',
+108 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.6' ] ]
+109 silly pickManifestFromRegistryMetadata spec >=1.0.0 <2.0.0 tag latest versions [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.6' ]
+110 silly addNamed node-bin-setup@latest
+111 verbose addNamed "latest" is being treated as a dist-tag for node-bin-setup
+112 info addNameTag [ 'node-bin-setup', 'latest' ]
+113 silly mapToRegistry name node-bin-setup
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry data Result {
+116 silly mapToRegistry   raw: 'node-bin-setup',
+116 silly mapToRegistry   scope: null,
+116 silly mapToRegistry   escapedName: 'node-bin-setup',
+116 silly mapToRegistry   name: 'node-bin-setup',
+116 silly mapToRegistry   rawSpec: '',
+116 silly mapToRegistry   spec: 'latest',
+116 silly mapToRegistry   type: 'tag' }
+117 silly mapToRegistry uri https://registry.npmjs.org/node-bin-setup
+118 verbose addNameTag registry:https://registry.npmjs.org/node-bin-setup already in flight; waiting
+119 silly addNameTag next cb for node-bin-setup with tag latest
+120 silly addNamed node-bin-setup@1.0.6
+121 verbose addNamed "1.0.6" is a plain semver version for node-bin-setup
+122 silly cache afterAdd node-bin-setup@1.0.6
+123 verbose afterAdd /Users/joy/.npm/node-bin-setup/1.0.6/package/package.json not in flight; writing
+124 verbose correctMkdir /Users/joy/.npm correctMkdir not in flight; initializing
+125 verbose afterAdd /Users/joy/.npm/node-bin-setup/1.0.6/package/package.json written
+126 silly loadAllDepsIntoIdealTree Finishing
+127 silly loadIdealTree Finishing
+128 silly currentTree mbs@1.0.0
+128 silly currentTree ├── @types/body-parser@1.16.8
+128 silly currentTree ├── @types/events@1.1.0
+128 silly currentTree ├── @types/express-serve-static-core@4.11.1
+128 silly currentTree ├── @types/express-session@1.15.7
+128 silly currentTree ├── @types/express@4.11.1
+128 silly currentTree ├── @types/helmet@0.0.37
+128 silly currentTree ├── @types/mime@2.0.0
+128 silly currentTree ├── @types/morgan@1.7.35
+128 silly currentTree ├── @types/node@8.9.1
+128 silly currentTree ├── @types/raven@2.1.4
+128 silly currentTree ├── @types/serve-static@1.13.1
+128 silly currentTree ├── accepts@1.3.4
+128 silly currentTree ├── array-flatten@1.1.1
+128 silly currentTree ├── basic-auth@2.0.0
+128 silly currentTree ├── body-parser@1.18.2
+128 silly currentTree ├── bytes@3.0.0
+128 silly currentTree ├── camelize@1.0.0
+128 silly currentTree ├── charenc@0.0.2
+128 silly currentTree ├── content-disposition@0.5.2
+128 silly currentTree ├── content-security-policy-builder@2.0.0
+128 silly currentTree ├── content-type@1.0.4
+128 silly currentTree ├── cookie-signature@1.0.6
+128 silly currentTree ├── cookie@0.3.1
+128 silly currentTree ├── crc@3.4.4
+128 silly currentTree ├── crypt@0.0.2
+128 silly currentTree ├── dasherize@2.0.0
+128 silly currentTree ├── debug@2.6.9
+128 silly currentTree ├── depd@1.1.2
+128 silly currentTree ├── destroy@1.0.4
+128 silly currentTree ├── dns-prefetch-control@0.1.0
+128 silly currentTree ├── dont-sniff-mimetype@1.0.0
+128 silly currentTree ├── ee-first@1.1.1
+128 silly currentTree ├── encodeurl@1.0.2
+128 silly currentTree ├── escape-html@1.0.3
+128 silly currentTree ├── etag@1.8.1
+128 silly currentTree ├── expect-ct@0.1.0
+128 silly currentTree ├── express-session@1.15.6
+128 silly currentTree ├── express@4.16.2
+128 silly currentTree ├── finalhandler@1.1.0
+128 silly currentTree ├── forwarded@0.1.2
+128 silly currentTree ├── frameguard@3.0.0
+128 silly currentTree ├── fresh@0.5.2
+128 silly currentTree ├── helmet-csp@2.7.0
+128 silly currentTree ├── helmet@3.10.0
+128 silly currentTree ├── hide-powered-by@1.0.0
+128 silly currentTree ├── hpkp@2.0.0
+128 silly currentTree ├── hsts@2.1.0
+128 silly currentTree ├─┬ http-errors@1.6.2
+128 silly currentTree │ ├── depd@1.1.1
+128 silly currentTree │ └── setprototypeof@1.0.3
+128 silly currentTree ├── iconv-lite@0.4.19
+128 silly currentTree ├── ienoopen@1.0.0
+128 silly currentTree ├── inherits@2.0.3
+128 silly currentTree ├── inversify-express-utils@5.2.1
+128 silly currentTree ├── inversify@4.10.0
+128 silly currentTree ├── ipaddr.js@1.5.2
+128 silly currentTree ├── is-buffer@1.1.6
+128 silly currentTree ├── lodash.reduce@4.6.0
+128 silly currentTree ├── lsmod@1.0.0
+128 silly currentTree ├── md5@2.2.1
+128 silly currentTree ├── media-typer@0.3.0
+128 silly currentTree ├── merge-descriptors@1.0.1
+128 silly currentTree ├── methods@1.1.2
+128 silly currentTree ├── mime-db@1.30.0
+128 silly currentTree ├── mime-types@2.1.17
+128 silly currentTree ├── mime@1.4.1
+128 silly currentTree ├── morgan@1.9.0
+128 silly currentTree ├── ms@2.0.0
+128 silly currentTree ├── negotiator@0.6.1
+128 silly currentTree ├── nocache@2.0.0
+128 silly currentTree ├── on-finished@2.3.0
+128 silly currentTree ├── on-headers@1.0.1
+128 silly currentTree ├── parseurl@1.3.2
+128 silly currentTree ├── path-to-regexp@0.1.7
+128 silly currentTree ├── platform@1.3.5
+128 silly currentTree ├── proxy-addr@2.0.2
+128 silly currentTree ├── qs@6.5.1
+128 silly currentTree ├── random-bytes@1.0.0
+128 silly currentTree ├── range-parser@1.2.0
+128 silly currentTree ├── raven@2.4.0
+128 silly currentTree ├── raw-body@2.3.2
+128 silly currentTree ├── referrer-policy@1.1.0
+128 silly currentTree ├── reflect-metadata@0.1.12
+128 silly currentTree ├── safe-buffer@5.1.1
+128 silly currentTree ├── send@0.16.1
+128 silly currentTree ├── serve-static@1.13.1
+128 silly currentTree ├── setprototypeof@1.1.0
+128 silly currentTree ├── stack-trace@0.0.9
+128 silly currentTree ├── statuses@1.3.1
+128 silly currentTree ├── timed-out@4.0.1
+128 silly currentTree ├── type-is@1.6.15
+128 silly currentTree ├── uid-safe@2.1.5
+128 silly currentTree ├── unpipe@1.0.0
+128 silly currentTree ├── utils-merge@1.0.1
+128 silly currentTree ├── uuid@3.0.0
+128 silly currentTree ├── vary@1.1.2
+128 silly currentTree └── x-xss-protection@1.0.0
+129 silly idealTree mbs@1.0.0
+129 silly idealTree ├── @types/body-parser@1.16.8
+129 silly idealTree ├── @types/events@1.1.0
+129 silly idealTree ├── @types/express-serve-static-core@4.11.1
+129 silly idealTree ├── @types/express-session@1.15.7
+129 silly idealTree ├── @types/express@4.11.1
+129 silly idealTree ├── @types/helmet@0.0.37
+129 silly idealTree ├── @types/mime@2.0.0
+129 silly idealTree ├── @types/morgan@1.7.35
+129 silly idealTree ├── @types/node@8.9.1
+129 silly idealTree ├── @types/raven@2.1.4
+129 silly idealTree ├── @types/serve-static@1.13.1
+129 silly idealTree ├── accepts@1.3.4
+129 silly idealTree ├── array-flatten@1.1.1
+129 silly idealTree ├── basic-auth@2.0.0
+129 silly idealTree ├── body-parser@1.18.2
+129 silly idealTree ├── bytes@3.0.0
+129 silly idealTree ├── camelize@1.0.0
+129 silly idealTree ├── charenc@0.0.2
+129 silly idealTree ├── content-disposition@0.5.2
+129 silly idealTree ├── content-security-policy-builder@2.0.0
+129 silly idealTree ├── content-type@1.0.4
+129 silly idealTree ├── cookie-signature@1.0.6
+129 silly idealTree ├── cookie@0.3.1
+129 silly idealTree ├── crc@3.4.4
+129 silly idealTree ├── crypt@0.0.2
+129 silly idealTree ├── dasherize@2.0.0
+129 silly idealTree ├── debug@2.6.9
+129 silly idealTree ├── depd@1.1.2
+129 silly idealTree ├── destroy@1.0.4
+129 silly idealTree ├── dns-prefetch-control@0.1.0
+129 silly idealTree ├── dont-sniff-mimetype@1.0.0
+129 silly idealTree ├── ee-first@1.1.1
+129 silly idealTree ├── encodeurl@1.0.2
+129 silly idealTree ├── escape-html@1.0.3
+129 silly idealTree ├── etag@1.8.1
+129 silly idealTree ├── expect-ct@0.1.0
+129 silly idealTree ├── express-session@1.15.6
+129 silly idealTree ├── express@4.16.2
+129 silly idealTree ├── finalhandler@1.1.0
+129 silly idealTree ├── forwarded@0.1.2
+129 silly idealTree ├── frameguard@3.0.0
+129 silly idealTree ├── fresh@0.5.2
+129 silly idealTree ├── helmet-csp@2.7.0
+129 silly idealTree ├── helmet@3.10.0
+129 silly idealTree ├── hide-powered-by@1.0.0
+129 silly idealTree ├── hpkp@2.0.0
+129 silly idealTree ├── hsts@2.1.0
+129 silly idealTree ├─┬ http-errors@1.6.2
+129 silly idealTree │ ├── depd@1.1.1
+129 silly idealTree │ └── setprototypeof@1.0.3
+129 silly idealTree ├── iconv-lite@0.4.19
+129 silly idealTree ├── ienoopen@1.0.0
+129 silly idealTree ├── inherits@2.0.3
+129 silly idealTree ├── inversify-express-utils@5.2.1
+129 silly idealTree ├── inversify@4.10.0
+129 silly idealTree ├── ipaddr.js@1.5.2
+129 silly idealTree ├── is-buffer@1.1.6
+129 silly idealTree ├── lodash.reduce@4.6.0
+129 silly idealTree ├── lsmod@1.0.0
+129 silly idealTree ├── md5@2.2.1
+129 silly idealTree ├── media-typer@0.3.0
+129 silly idealTree ├── merge-descriptors@1.0.1
+129 silly idealTree ├── methods@1.1.2
+129 silly idealTree ├── mime-db@1.30.0
+129 silly idealTree ├── mime-types@2.1.17
+129 silly idealTree ├── mime@1.4.1
+129 silly idealTree ├── morgan@1.9.0
+129 silly idealTree ├── ms@2.0.0
+129 silly idealTree ├── negotiator@0.6.1
+129 silly idealTree ├── nocache@2.0.0
+129 silly idealTree ├── node-bin-setup@1.0.6
+129 silly idealTree ├── node@9.5.0
+129 silly idealTree ├── on-finished@2.3.0
+129 silly idealTree ├── on-headers@1.0.1
+129 silly idealTree ├── parseurl@1.3.2
+129 silly idealTree ├── path-to-regexp@0.1.7
+129 silly idealTree ├── platform@1.3.5
+129 silly idealTree ├── proxy-addr@2.0.2
+129 silly idealTree ├── qs@6.5.1
+129 silly idealTree ├── random-bytes@1.0.0
+129 silly idealTree ├── range-parser@1.2.0
+129 silly idealTree ├── raven@2.4.0
+129 silly idealTree ├── raw-body@2.3.2
+129 silly idealTree ├── referrer-policy@1.1.0
+129 silly idealTree ├── reflect-metadata@0.1.12
+129 silly idealTree ├── safe-buffer@5.1.1
+129 silly idealTree ├── send@0.16.1
+129 silly idealTree ├── serve-static@1.13.1
+129 silly idealTree ├── setprototypeof@1.1.0
+129 silly idealTree ├── stack-trace@0.0.9
+129 silly idealTree ├── statuses@1.3.1
+129 silly idealTree ├── timed-out@4.0.1
+129 silly idealTree ├── type-is@1.6.15
+129 silly idealTree ├── uid-safe@2.1.5
+129 silly idealTree ├── unpipe@1.0.0
+129 silly idealTree ├── utils-merge@1.0.1
+129 silly idealTree ├── uuid@3.0.0
+129 silly idealTree ├── vary@1.1.2
+129 silly idealTree └── x-xss-protection@1.0.0
+130 silly generateActionsToTake Starting
+131 silly install generateActionsToTake
+132 silly generateActionsToTake Finishing
+133 silly diffTrees action count 2
+134 silly diffTrees add node-bin-setup@1.0.6
+135 silly diffTrees add node@9.5.0
+136 silly decomposeActions action count 16
+137 silly decomposeActions fetch node-bin-setup@1.0.6
+138 silly decomposeActions extract node-bin-setup@1.0.6
+139 silly decomposeActions test node-bin-setup@1.0.6
+140 silly decomposeActions preinstall node-bin-setup@1.0.6
+141 silly decomposeActions build node-bin-setup@1.0.6
+142 silly decomposeActions install node-bin-setup@1.0.6
+143 silly decomposeActions postinstall node-bin-setup@1.0.6
+144 silly decomposeActions finalize node-bin-setup@1.0.6
+145 silly decomposeActions fetch node@9.5.0
+146 silly decomposeActions extract node@9.5.0
+147 silly decomposeActions test node@9.5.0
+148 silly decomposeActions preinstall node@9.5.0
+149 silly decomposeActions build node@9.5.0
+150 silly decomposeActions install node@9.5.0
+151 silly decomposeActions postinstall node@9.5.0
+152 silly decomposeActions finalize node@9.5.0
+153 silly runTopLevelLifecycles Starting
+154 silly executeActions Starting
+155 silly install executeActions
+156 silly doSerial global-install 0
+157 silly doParallel fetch 2
+158 verbose correctMkdir /Users/joy/.npm/_locks correctMkdir not in flight; initializing
+159 verbose lock using /Users/joy/.npm/_locks/staging-b914a845195ed985.lock for /Users/joy/force-dev/mbs/node_modules/.staging
+160 silly doParallel extract 2
+161 silly extract node-bin-setup@1.0.6
+162 silly extract node@9.5.0
+163 verbose unbuild node_modules/.staging/node-bin-setup-fec485d2
+164 verbose unbuild node_modules/.staging/node-b85f6277
+165 silly gentlyRm /Users/joy/force-dev/mbs/node_modules/.staging/node-bin-setup-fec485d2 is being purged from base /Users/joy/force-dev/mbs
+166 verbose gentlyRm don't care about contents; nuking /Users/joy/force-dev/mbs/node_modules/.staging/node-bin-setup-fec485d2
+167 verbose tar unpack /Users/joy/.npm/node-bin-setup/1.0.6/package.tgz
+168 verbose tar unpacking to /Users/joy/force-dev/mbs/node_modules/.staging/node-bin-setup-fec485d2
+169 silly gentlyRm /Users/joy/force-dev/mbs/node_modules/.staging/node-bin-setup-fec485d2 is being purged
+170 verbose gentlyRm don't care about contents; nuking /Users/joy/force-dev/mbs/node_modules/.staging/node-bin-setup-fec485d2
+171 silly gentlyRm /Users/joy/force-dev/mbs/node_modules/.staging/node-b85f6277 is being purged from base /Users/joy/force-dev/mbs
+172 verbose gentlyRm don't care about contents; nuking /Users/joy/force-dev/mbs/node_modules/.staging/node-b85f6277
+173 silly gunzTarPerm modes [ '755', '644' ]
+174 verbose tar unpack /Users/joy/.npm/node/9.5.0/package.tgz
+175 verbose tar unpacking to /Users/joy/force-dev/mbs/node_modules/.staging/node-b85f6277
+176 silly gentlyRm /Users/joy/force-dev/mbs/node_modules/.staging/node-b85f6277 is being purged
+177 verbose gentlyRm don't care about contents; nuking /Users/joy/force-dev/mbs/node_modules/.staging/node-b85f6277
+178 silly gunzTarPerm modes [ '755', '644' ]
+179 silly gunzTarPerm extractEntry package.json
+180 silly gunzTarPerm extractEntry package.json
+181 silly gunzTarPerm extractEntry index.js
+182 silly gunzTarPerm extractEntry installArchSpecificPackage.js
+183 silly gunzTarPerm extractEntry README.md
+184 silly gentlyRm /Users/joy/force-dev/mbs/node_modules/.staging/node-bin-setup-fec485d2/node_modules is being purged
+185 verbose gentlyRm don't care about contents; nuking /Users/joy/force-dev/mbs/node_modules/.staging/node-bin-setup-fec485d2/node_modules
+186 silly gentlyRm /Users/joy/force-dev/mbs/node_modules/.staging/node-b85f6277/node_modules is being purged
+187 verbose gentlyRm don't care about contents; nuking /Users/joy/force-dev/mbs/node_modules/.staging/node-b85f6277/node_modules
+188 silly doParallel preinstall 2
+189 silly preinstall node-bin-setup@1.0.6
+190 info lifecycle node-bin-setup@1.0.6~preinstall: node-bin-setup@1.0.6
+191 silly preinstall node@9.5.0
+192 info lifecycle node@9.5.0~preinstall: node@9.5.0
+193 silly lifecycle node-bin-setup@1.0.6~preinstall: no script for preinstall, continuing
+194 verbose lifecycle node@9.5.0~preinstall: unsafe-perm in lifecycle true
+195 verbose lifecycle node@9.5.0~preinstall: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/joy/force-dev/mbs/node_modules/.staging/node-b85f6277/node_modules/.bin:/Users/joy/force-dev/mbs/node_modules/.bin:/Users/joy/Library/Android/sdk/platform-tools:/Users/joy/.rbenv/shims:/Users/joy/.npm-packages/bin:/Users/joy/Library/Python/3.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/joy/Library/Android/sdk/platform-tools:/Users/joy/.rbenv/shims:/Users/joy/.npm-packages/bin:/Users/joy/Library/Python/3.4/bin
+196 verbose lifecycle node@9.5.0~preinstall: CWD: /Users/joy/force-dev/mbs/node_modules/.staging/node-b85f6277
+197 silly lifecycle node@9.5.0~preinstall: Args: [ '-c', 'node installArchSpecificPackage' ]
+198 silly lifecycle node@9.5.0~preinstall: Returned: code: 1  signal: null
+199 info lifecycle node@9.5.0~preinstall: Failed to exec preinstall script
+200 verbose unlock done using /Users/joy/.npm/_locks/staging-b914a845195ed985.lock for /Users/joy/force-dev/mbs/node_modules/.staging
+201 silly rollbackFailedOptional Starting
+202 silly rollbackFailedOptional Finishing
+203 silly runTopLevelLifecycles Finishing
+204 silly install printInstalled
+205 verbose stack Error: node@9.5.0 preinstall: `node installArchSpecificPackage`
+205 verbose stack Exit status 1
+205 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:279:16)
+205 verbose stack     at emitTwo (events.js:106:13)
+205 verbose stack     at EventEmitter.emit (events.js:192:7)
+205 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+205 verbose stack     at emitTwo (events.js:106:13)
+205 verbose stack     at ChildProcess.emit (events.js:192:7)
+205 verbose stack     at maybeClose (internal/child_process.js:890:16)
+205 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+206 verbose pkgid node@9.5.0
+207 verbose cwd /Users/joy/force-dev/mbs
+208 error Darwin 16.6.0
+209 error argv "/usr/local/Cellar/node/8.1.4/bin/node" "/usr/local/bin/npm" "install" "node"
+210 error node v7.6.0
+211 error npm  v4.1.2
+212 error code ELIFECYCLE
+213 error node@9.5.0 preinstall: `node installArchSpecificPackage`
+213 error Exit status 1
+214 error Failed at the node@9.5.0 preinstall script 'node installArchSpecificPackage'.
+214 error Make sure you have the latest version of node.js and npm installed.
+214 error If you do, this is most likely a problem with the node package,
+214 error not with npm itself.
+214 error Tell the author that this fails on your system:
+214 error     node installArchSpecificPackage
+214 error You can get information on how to open an issue for this project with:
+214 error     npm bugs node
+214 error Or if that isn't available, you can get their info via:
+214 error     npm owner ls node
+214 error There is likely additional logging output above.
+215 verbose exit [ 1, true ]
