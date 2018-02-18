@@ -91,11 +91,11 @@ export class MyblogServer {
                 maxAge: 1000 * 60 * 60 * 24
             }
         }));
-        //보안을 위한 헬멧 라이브러리 사용 response http header 설정 
+        //보안을 위한 헬멧 라이브러리 사용 response http header 설정
         // defulat로 적용된 방어 내용
-        // 플래쉬 컨텐츠 방어, X-Powered-by header (서버의 정보 예를들어 몇버전의 어떤 서버인지를 알려주는 정보임) 를 없앰 , 
-        // HSTS support(이 서버는 HTTPS로만 사용하는 사이트임을 브라우저에게 알리는 헤더) , Clickjacking 방어, XSS 방어 
-        // 외부 사이트에서 iframe 내부에 이 사이트 사용 불가 
+        // 플래쉬 컨텐츠 방어, X-Powered-by header (서버의 정보 예를들어 몇버전의 어떤 서버인지를 알려주는 정보임) 를 없앰 ,
+        // HSTS support(이 서버는 HTTPS로만 사용하는 사이트임을 브라우저에게 알리는 헤더) , Clickjacking 방어, XSS 방어
+        // 외부 사이트에서 iframe 내부에 이 사이트 사용 불가
         app.use(helmet());
         app.use(morgan('combined'));
 
@@ -112,6 +112,9 @@ export class MyblogServer {
         }
 
 
+        app.use('/assets', express.static(__dirname + '/assets'))
+
+
         const options = {
             swaggerDefinition: {
                 info: {
@@ -120,7 +123,7 @@ export class MyblogServer {
                     schems: ['http', 'https']
                 },
             },
-            apis: [__dirname + '/controller/*'], // JSDOC이 실행될 패스값 지정 
+            apis: [__dirname + '/controller/*'], // JSDOC이 실행될 패스값 지정
         };
         let swaggerSpec = swaggerJSDoc(options);
 
@@ -128,7 +131,7 @@ export class MyblogServer {
             res.setHeader('Content-Type', 'application/json');
             res.send(swaggerSpec);
         });
-        
+
         app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 

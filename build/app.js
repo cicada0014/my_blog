@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 require("reflect-metadata");
 var inversify_express_utils_1 = require("inversify-express-utils");
+var express = require("express");
 var session = require("express-session");
 var bodyParser = require("body-parser");
 var helmet = require("helmet");
@@ -62,15 +63,11 @@ var MyblogServer = /** @class */ (function () {
                 maxAge: 1000 * 60 * 60 * 24
             }
         }));
-        // this.mysqlcon = new MysqlConnection();
-        // this.conversationFactory = new ConversationFactory(this.mysqlcon);
-        // this.messageHandler = new MessageHandler(this.conversationFactory);
-        // 특정시간에 어떤 작업을 내릴 수가 있다. 
-        //보안을 위한 헬멧 라이브러리 사용 response http header 설정 
+        //보안을 위한 헬멧 라이브러리 사용 response http header 설정
         // defulat로 적용된 방어 내용
-        // 플래쉬 컨텐츠 방어, X-Powered-by header (서버의 정보 예를들어 몇버전의 어떤 서버인지를 알려주는 정보임) 를 없앰 , 
-        // HSTS support(이 서버는 HTTPS로만 사용하는 사이트임을 브라우저에게 알리는 헤더) , Clickjacking 방어, XSS 방어 
-        // 외부 사이트에서 iframe 내부에 이 사이트 사용 불가 
+        // 플래쉬 컨텐츠 방어, X-Powered-by header (서버의 정보 예를들어 몇버전의 어떤 서버인지를 알려주는 정보임) 를 없앰 ,
+        // HSTS support(이 서버는 HTTPS로만 사용하는 사이트임을 브라우저에게 알리는 헤더) , Clickjacking 방어, XSS 방어
+        // 외부 사이트에서 iframe 내부에 이 사이트 사용 불가
         app.use(helmet());
         app.use(morgan('combined'));
         if (!(process.env.NODE_ENV == 'dev')) {
@@ -84,6 +81,7 @@ var MyblogServer = /** @class */ (function () {
                 }
             });
         }
+        app.use('/assets', express.static(__dirname + '/assets'));
         var options = {
             swaggerDefinition: {
                 info: {
@@ -103,11 +101,11 @@ var MyblogServer = /** @class */ (function () {
     };
     ;
     MyblogServer.prototype.getServerIp = function () {
-        var ifaces = os.networkInterfaces();
+        var interfaces = os.networkInterfaces();
         var result = '';
-        for (var dev in ifaces) {
+        for (var dev in interfaces) {
             var alias = 0;
-            ifaces[dev].forEach(function (details) {
+            interfaces[dev].forEach(function (details) {
                 if (details.family == 'IPv4' && details.internal === false) {
                     result = details.address;
                     ++alias;
