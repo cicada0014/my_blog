@@ -25,6 +25,10 @@ var PostsSchema = /** @class */ (function () {
                 primaryKey: true,
                 autoIncrement: true
             },
+            title: {
+                type: sequelize.STRING(100),
+                allowNull: false
+            },
             contents: {
                 type: sequelize.TEXT,
                 allowNull: true

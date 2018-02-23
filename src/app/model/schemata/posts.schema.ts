@@ -25,6 +25,10 @@ export class PostsSchema {
                     primaryKey: true,
                     autoIncrement: true
                 },
+                title: {
+                    type: sequelize.STRING(100),
+                    allowNull: false
+                },
                 contents: {
                     type: sequelize.TEXT,
                     allowNull: true
@@ -57,6 +61,7 @@ export class PostsSchema {
 
 export interface PostsAttribute {
     id?: number;
+    title?: string;
     contents?: string;
     extra?: string;
     active?: boolean;

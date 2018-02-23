@@ -21,28 +21,29 @@ export class PostController {
 
 
     /**
-    * @swagger
-    * /api/post/:id:
-    *   get:
-    *     summary: 포스트 가져오기
-    *     description: 아이디를 통해 포스트를 가져옵니다.
-    *     tags: [PostController]
-    *     produces:
-    *       - application/json
-    *     responses:
-    *       200:
-    *         description:
-    *            result = {}"
-    */
-    @httpGet('/:id')
-    public getPostById(@request() req, @response() res, @next() next) {
-        return this.postDAO.getPostById(req.query.id).then(r => {
+* @swagger
+* /api/post/:id:
+*   get:
+*     summary: 포스트 가져오기
+*     description: 아이디를 통해 포스트를 가져옵니다.
+*     tags: [PostController]
+*     produces:
+*       - application/json
+*     responses:
+*       200:
+*         description:
+*            result = {}"
+*/
+    @httpGet('/list')
+    public getPostList(@request() req, @response() res, @next() next) {
+        return this.postDAO.getPostList().then(r => {
             return r
         }).catch(e => {
             next(e)
         })
 
     }
+
     /**
     * @swagger
     * /api/post/:id:
@@ -58,14 +59,15 @@ export class PostController {
     *            result = {}"
     */
     @httpGet('/:id')
-    public getPostList(@request() req, @response() res, @next() next) {
-        return this.postDAO.getPostList().then(r => {
+    public async getPostById(@request() req, @response() res, @next() next) {
+        return this.postDAO.getPostById(req.query.id).then(r => {
             return r
         }).catch(e => {
             next(e)
         })
 
     }
+
     /**
     * @swagger
     * /api/post/:id:
